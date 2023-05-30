@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        default-label: ecommerce-config
+        git:
+          uri: https://github.com/altananay/config-server
+  profiles:
+    active: dev
+server:
+  port: 8888
