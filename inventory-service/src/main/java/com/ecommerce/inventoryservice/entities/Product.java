@@ -1,6 +1,6 @@
 package com.ecommerce.inventoryservice.entities;
 
-import com.ecommerce.commonpackage.entity.BaseEntity;
+import com.ecommerce.inventoryservice.entities.base.BaseEntity;
 import com.ecommerce.inventoryservice.entities.enums.State;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

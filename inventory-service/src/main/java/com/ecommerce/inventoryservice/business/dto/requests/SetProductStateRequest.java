@@ -1,5 +1,6 @@
-package com.ecommerce.inventoryservice.business.dto.responses;
+package com.ecommerce.inventoryservice.business.dto.requests;
 
+import com.ecommerce.inventoryservice.entities.enums.State;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -11,8 +12,7 @@ import java.util.UUID;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class CreateProductCategoryResponse {
+public class SetProductStateRequest {
     private UUID id;
-    private UUID productId;
-    private UUID categoryId;
+    private State state;
 }
