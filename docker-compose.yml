@@ -4,12 +4,13 @@ services:
     container_name: ecommerce-kafka
     image: bashj79/kafka-kraft
     ports:
-      - "9093:9093"
+      - "9092:9092"
     volumes:
       - kafka_data:/opt/kafka/kafka-logs
   mongodb:
     container_name: ecommerce-filterdb
     image: mongo
+    command: mongod --port 27019
     ports:
       - "27019:27019"
     volumes:
