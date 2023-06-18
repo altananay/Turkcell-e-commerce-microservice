@@ -6,4 +6,9 @@ public class Paths {
     public static class Inventory {
         public static final String ServiceBasePackage = "com.ecommerce.inventoryservice";
     }
+
+    public static class Filter
+    {
+        public static final String ServiceBasePackage = "com.ecommerce.filterservice";
+    }
 }
