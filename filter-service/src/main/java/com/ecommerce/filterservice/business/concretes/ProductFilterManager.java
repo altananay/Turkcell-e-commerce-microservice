@@ -10,6 +10,7 @@ import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.UUID;
 
 @Service
 @AllArgsConstructor
@@ -43,5 +44,10 @@ public class ProductFilterManager implements ProductFilterService {
     @Override
     public void delete(String id) {
         repository.deleteById(id);
+    }
+
+    @Override
+    public void deleteByProductId(UUID productId) {
+        repository.deleteByProductId(productId);
     }
 }
